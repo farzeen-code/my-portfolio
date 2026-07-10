@@ -15,6 +15,7 @@ function Hero() {
                 <a href="#contact" style={styles.secondarybtn}>Contact</a>
 
             </div>
+            
         </section>
     );
 }

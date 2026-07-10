@@ -14,15 +14,14 @@ function Contact(){
             </a>
 
             <div style={styles.socials}>
-                <a href="mailto:shahzadfarzeen9@gmail.com" style={styles.socialLink}>  
-                    Email
-                </a>
-                <a href="www.linkedin.com/in/farzeen-shahzad-736b13409" target="blank" style={styles.socialLink}>
+                <p style={styles.socialLink}>shahzadfarzeen9@gmail.com</p>
+                <a href="linkedin.com/in/farzeen-shahzad-736b13409" target="blank" style={styles.socialLink}>
                     LinkedIn
                 </a>
                 <a href="https://github.com/farzeen-code" target="blank" style={styles.socialLink}>
                     Github
                 </a>
+                
 
             </div>
         </section>
