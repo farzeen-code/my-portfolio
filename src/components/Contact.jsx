@@ -15,7 +15,7 @@ function Contact(){
 
             <div style={styles.socials}>
                 <p style={styles.socialLink}>shahzadfarzeen9@gmail.com</p>
-                <a href="linkedin.com/in/farzeen-shahzad-736b13409" target="blank" style={styles.socialLink}>
+                <a href="https://www.linkedin.com/in/farzeen-shahzad5/" target="blank" style={styles.socialLink}>
                     LinkedIn
                 </a>
                 <a href="https://github.com/farzeen-code" target="blank" style={styles.socialLink}>
