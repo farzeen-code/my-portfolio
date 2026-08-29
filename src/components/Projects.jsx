@@ -1,4 +1,4 @@
-function ProjectCard({ title, description, tech, github }){
+function ProjectCard({ title, description, tech, github, liveDemo }){
     return(
         <div style={styles.card}>
             <h3 style={styles.cardTitle}>{title}</h3>
@@ -7,12 +7,18 @@ function ProjectCard({ title, description, tech, github }){
                 {tech.map((item, index) => (
                     <span key={index} style={styles.techTag}>{item}</span>
                 ))}
-
             </div>
 
-            <a href={github} target="_blank" style={styles.githubLink}>
-                View on GitHub
-            </a>
+            <div style={styles.links}>
+                <a href={github} target="_blank" style={styles.githubLink}>
+                    View on GitHub
+                </a>
+                {liveDemo && (
+                    <a href={liveDemo} target="_blank" style={styles.demoLink}>
+                        Live Demo
+                    </a>
+                )}
+            </div>
         </div>
     )
 }
@@ -20,10 +26,11 @@ function ProjectCard({ title, description, tech, github }){
 const projects = [
     {
         id: 1,
-        title: "Full Stack E=commerce Platform",
+        title: "Full Stack E-commerce Platform",
         description: "A full-stack e-commerce application built during my internship at DevelopersHub. Features product listings, shopping cart, user authentication and order management.",
         tech: ["MongoDB", "Express.js", "React", "Node.js", "TailwindCSS"],
         github: "https://github.com/farzeen-code/ecommerce-fullstack-design",
+        liveDemo: "https://ecommerce-fullstack-design-olive.vercel.app/",
     },
 
     {
@@ -32,6 +39,31 @@ const projects = [
         description: "A console-based C++ application using OOP principles. Features a multi-tiered user hierarchy with Students, Teachers and Staff, each with distinct borrowing limits.",
         tech: ["C++", "OOP", "Inheritance", "Polymorphism", "STL"],
         github: "https://github.com/farzeen-code/Library-Management-System",
+    },
+
+    {
+        id: 3,
+        title: "Circuit-Simulator",
+        description: "High-performance C++ digital logic circuit simulator featuring Kahn's Topological Sorting algorithm for dependency evaluation and a custom chunked memory pool allocator for zero-overhead node allocation.",
+        tech: ["C++", "Digital Logic", "Kahn's Algorithm", "Memory Pool"],
+        github: "https://github.com/farzeen-code/Circuit-Simulator",
+    },
+
+    {
+        id: 4,
+        title: "Credit-Scoring-Model",
+        description: "End-to-end Machine Learning credit scoring pipeline with EDA, preprocessing, model training, and permutation feature importance.",
+        tech: ["Python", "Jupyter Notebook", "Machine Learning", "Pandas", "Scikit-learn"],
+        github: "https://github.com/farzeen-code/Credit-Scoring-Model",
+    },
+
+    {
+        id: 5,
+        title: "Disease-Prediction-Model",
+        description: "An end-to-end classification model built to predict the presence of cardiovascular disease using clinical diagnostic metrics from the UCI Heart Disease dataset.",
+        tech: ["Python", "Jupyter Notebook", "Classification", "Healthcare"],
+        github: "https://github.com/farzeen-code/Disease-Prediction-Model",
+        liveDemo: "https://disease-prediction-model-pi.vercel.app/",
     },
 ];
 
@@ -48,6 +80,7 @@ function Projects() {
                         description={project.description}
                         tech={project.tech}
                         github={project.github}
+                        liveDemo={project.liveDemo}
                     />
                 ))}
             </div>
@@ -74,7 +107,7 @@ const styles = {
     },
     grid: {
         display: "grid",
-        gridTemplateColumns: "repeat(2, 1fr)",
+        gridTemplateColumns: "repeat(auto-fill, minmax(420px, 1fr))",
         gap: "16px",
     },
 
@@ -112,6 +145,11 @@ const styles = {
         padding: "4px 10px",
         borderRadius: "4px",
     },
+    links: {
+        display: "flex",
+        gap: "10px",
+        flexWrap: "wrap",
+    },
     githubLink: {
         color: "#ccd6f6",
         fontSize: "14px",
@@ -119,8 +157,18 @@ const styles = {
         fontFamily: "monospace",
         border: "4px solid #9f1b1b",
         padding: "4px 10px",
-        
         width: "fit-content",
+    },
+    demoLink: {
+        color: "#000000",
+        fontSize: "14px",
+        textDecoration: "none",
+        fontFamily: "monospace",
+        border: "4px solid #64ffda",
+        backgroundColor: "#64ffda",
+        padding: "4px 10px",
+        width: "fit-content",
+        fontWeight: "bold",
     },
 
     
