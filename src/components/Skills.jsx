@@ -1,8 +1,8 @@
 const skills = {
-    Languages: ["C++", "Javascript", "HTML", "CSS"],
-    Frameworks: ["React", "Node.js", "Express.js"],
+    Languages: ["C++", "Python", "Javascript", "HTML", "CSS"],
+    Frameworks: ["React", "Node.js", "Express.js", "FastAPI"],
     Tools: ["Git", "Github", "Dev C++", "VS Code"],
-    Concepts: ["OOP", "DSA", "RESTful APIs"], 
+    Concepts: ["OOP", "DSA", "RESTful APIs", "Machine Learning", "Scikit-learn"], 
 };
 
 function Skills() {

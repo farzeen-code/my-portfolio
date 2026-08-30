@@ -26,19 +26,20 @@ function ProjectCard({ title, description, tech, github, liveDemo }){
 const projects = [
     {
         id: 1,
+        title: "Disease-Prediction-Model",
+        description: "An end-to-end classification model built to predict the presence of cardiovascular disease using clinical diagnostic metrics from the UCI Heart Disease dataset.",
+        tech: ["Python", "Jupyter Notebook", "Machine Learning", "Scikit-learn", "FastAPI", "Classification", "Healthcare"],
+        github: "https://github.com/farzeen-code/Disease-Prediction-Model",
+        liveDemo: "https://disease-prediction-model-pi.vercel.app/",
+    },
+
+    {
+        id: 2,
         title: "Full Stack E-commerce Platform",
         description: "A full-stack e-commerce application built during my internship at DevelopersHub. Features product listings, shopping cart, user authentication and order management.",
         tech: ["MongoDB", "Express.js", "React", "Node.js", "TailwindCSS"],
         github: "https://github.com/farzeen-code/ecommerce-fullstack-design",
         liveDemo: "https://ecommerce-fullstack-design-olive.vercel.app/",
-    },
-
-    {
-        id: 2,
-        title: "Library Management System",
-        description: "A console-based C++ application using OOP principles. Features a multi-tiered user hierarchy with Students, Teachers and Staff, each with distinct borrowing limits.",
-        tech: ["C++", "OOP", "Inheritance", "Polymorphism", "STL"],
-        github: "https://github.com/farzeen-code/Library-Management-System",
     },
 
     {
@@ -59,11 +60,10 @@ const projects = [
 
     {
         id: 5,
-        title: "Disease-Prediction-Model",
-        description: "An end-to-end classification model built to predict the presence of cardiovascular disease using clinical diagnostic metrics from the UCI Heart Disease dataset.",
-        tech: ["Python", "Jupyter Notebook", "Classification", "Healthcare"],
-        github: "https://github.com/farzeen-code/Disease-Prediction-Model",
-        liveDemo: "https://disease-prediction-model-pi.vercel.app/",
+        title: "Library Management System",
+        description: "A console-based C++ application using OOP principles. Features a multi-tiered user hierarchy with Students, Teachers and Staff, each with distinct borrowing limits.",
+        tech: ["C++", "OOP", "Inheritance", "Polymorphism", "STL"],
+        github: "https://github.com/farzeen-code/Library-Management-System",
     },
 ];
 
