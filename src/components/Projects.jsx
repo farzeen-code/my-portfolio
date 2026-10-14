@@ -26,6 +26,15 @@ function ProjectCard({ title, description, tech, github, liveDemo }){
 const projects = [
     {
         id: 1,
+        title: "Distributed Video & Document RAG Engine",
+        description: "Enterprise-grade distributed asynchronous multimodal RAG engine for processing documents and long-form video. Built with FastAPI, Redis, Celery, FFmpeg audio extraction, INT8 quantized faster-whisper transcription, ChromaDB vector storage, and Google Gemini with temporal video citations [MM:SS].",
+        tech: ["FastAPI", "Python", "Celery", "Redis", "Docker", "ChromaDB", "faster-whisper", "Google Gemini"],
+        github: "https://github.com/farzeen-code/distributed-video-rag-engine",
+        liveDemo: "https://fastapi-rag-pipeline.vercel.app/",
+    },
+
+    {
+        id: 2,
         title: "Disease-Prediction-Model",
         description: "An end-to-end classification model built to predict the presence of cardiovascular disease using clinical diagnostic metrics from the UCI Heart Disease dataset.",
         tech: ["Python", "Jupyter Notebook", "Machine Learning", "Scikit-learn", "FastAPI", "Classification", "Healthcare"],
@@ -34,7 +43,7 @@ const projects = [
     },
 
     {
-        id: 2,
+        id: 3,
         title: "Full Stack E-commerce Platform",
         description: "A full-stack e-commerce application built during my internship at DevelopersHub. Features product listings, shopping cart, user authentication and order management.",
         tech: ["MongoDB", "Express.js", "React", "Node.js", "TailwindCSS"],
@@ -43,7 +52,7 @@ const projects = [
     },
 
     {
-        id: 3,
+        id: 4,
         title: "Circuit-Simulator",
         description: "High-performance C++ digital logic circuit simulator featuring Kahn's Topological Sorting algorithm for dependency evaluation and a custom chunked memory pool allocator for zero-overhead node allocation.",
         tech: ["C++", "Digital Logic", "Kahn's Algorithm", "Memory Pool"],
@@ -51,7 +60,7 @@ const projects = [
     },
 
     {
-        id: 4,
+        id: 5,
         title: "Credit-Scoring-Model",
         description: "End-to-end Machine Learning credit scoring pipeline with EDA, preprocessing, model training, and permutation feature importance.",
         tech: ["Python", "Jupyter Notebook", "Machine Learning", "Pandas", "Scikit-learn"],
@@ -59,7 +68,7 @@ const projects = [
     },
 
     {
-        id: 5,
+        id: 6,
         title: "Library Management System",
         description: "A console-based C++ application using OOP principles. Features a multi-tiered user hierarchy with Students, Teachers and Staff, each with distinct borrowing limits.",
         tech: ["C++", "OOP", "Inheritance", "Polymorphism", "STL"],
